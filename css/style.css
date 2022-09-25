@@ -1,0 +1,297 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+}
+
+header {
+  height: 399px;
+  background-image: url("/images/header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo-header {
+  width: 100%;
+  padding: 18px 80px;
+}
+
+.logo-img {
+  height: 36px;
+}
+
+header .btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+}
+
+.header-text {
+  font-family: "poppins", sans-serif;
+  font-size: 64px;
+  margin-top: 88px;
+  color: #ffffff;
+  text-align: center;
+}
+
+section {
+  padding: 48px 80px;
+}
+
+#feature .section-title,
+#experience .section-title,
+#activities .section-title,
+#events .section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.section-title h2 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #2a333d;
+}
+
+.feature-grid,
+.experience-grid,
+.activities-grid,
+.events-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.feature-grid .col,
+.experience-grid .col,
+.activities-grid .col,
+.events-grid .col {
+  padding: 0;
+}
+
+.feature-grid .card,
+.experience-grid .card,
+.activities-grid .card,
+.events-grid .card {
+  position: relative;
+  border: none;
+  /* min-width: 276px; */
+}
+
+.feature-grid img,
+.experience-grid img,
+.activities-grid img {
+  height: 151px;
+  border-radius: 8px;
+}
+
+.badge-text {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 3px 11px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #2e3741;
+}
+
+.feature-grid .card-body,
+.experience-grid .card-body,
+.activities-grid .card-body,
+.events-grid .card-body {
+  padding: 0;
+  margin-top: 8px;
+}
+
+.events-grid .card-body {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.feature-grid .card-title,
+.experience-grid .card-title,
+.activities-grid .card-title,
+.events-grid .card-title {
+  font-weight: 700;
+  font-size: 16px;
+  color: #2a333d;
+}
+
+.feature-grid .card-text,
+.experience-grid .card-text,
+.activities-grid .card-text,
+.events-grid .card-text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #2e3741;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+#category .col,
+#hotel .col,
+#restaurants .col {
+  padding: 0;
+}
+
+#category .col img,
+#hotel .col img,
+#restaurants .col img {
+  width: 100%;
+}
+
+#category p {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#hotel p,
+#restaurants p {
+  position: absolute;
+  bottom: 25px;
+  left: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+.hotel-grid,
+.restaurants-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.events-grid img {
+  height: 151px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+#attractions {
+  padding: 48px 0;
+}
+
+#attractions .section-title {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+#attractions h2 {
+  margin: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+#attractions .col {
+  position: relative;
+}
+
+#attractions .icon-text {
+  position: absolute;
+  margin: 0;
+  bottom: 21px;
+  left: 17px;
+  color: #ffffff;
+  width: 90px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#attractions .icon {
+  position: absolute;
+  bottom: 27px;
+  right: 17px;
+}
+
+footer {
+  padding: 32px 80px;
+}
+
+.footer {
+  padding: 32px;
+  background: #f2fefb;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.footer img {
+  height: 32px;
+}
+
+@media (max-width: 1200px) {
+  section {
+    padding: 2% 5%;
+  }
+
+  .feature-grid,
+  .category-grid,
+  .experience-grid,
+  .activities-grid,
+  .hotel-grid,
+  .restaurants-grid,
+  .events-grid,
+  .attraction-grid {
+    overflow-x: scroll;
+  }
+
+  .feature-grid .card,
+  .hotel-grid .col,
+  .experience-grid .card,
+  .activities-grid .card,
+  .restaurants-grid .col,
+  .events-grid .card {
+    min-width: 276px;
+  }
+
+  .attraction-grid {
+    flex-wrap: nowrap;
+  }
+
+  .attraction-grid .col {
+    min-width: 276px;
+  }
+
+  #category .col {
+    min-width: 197px;
+  }
+}
+
+@media (max-width: 650px) {
+  header {
+    height: 399px;
+    background-image: url("/images/Rectangle\ 33.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .logo-header {
+    width: 100%;
+    padding: 15px 16px;
+  }
+
+  .logo-img {
+    height: 23.84px;
+  }
+}
